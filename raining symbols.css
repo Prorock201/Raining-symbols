@@ -28,3 +28,25 @@ body {
  color: #333333;
  display: inline-block;
 }
+
+.drops {
+ width: 10px;
+ height: 10px;
+ font-size: 26pt;
+ font-family: Verdana, monospace;
+ color: #333333;
+ animation: raining;
+ /*animation-duration: 5s;*/
+ -webkit-animation: raining;
+ /*-webkit-animation-duration: 5s;	*/
+}
+
+@keyframes raining{
+ from {transform: translateY(-30px);}
+ to {transform: translateY(500px);}
+}
+
+@-webkit-keyframes raining{
+ from {-webkit-transform: translateY(-30px);}
+ to {-webkit-transform: translateY(500px);}
+}
