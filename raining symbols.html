@@ -8,7 +8,15 @@
         <script type="text/javascript" src="raining symbols.js"></script>
     </head>
     <body>
-        <div class="content"></div>
+        <div class="game-over">
+            <div class="game-over__content">
+                <div class="game-over__content__title">Game Over</div>
+                <div class="game-over__content__result"></div>
+                <div class="game-over__content__stat"></div>
+             <a href="raining symbols.html">Try Again?</a>
+            </div>
+        </div>
+        <canvas id="content">Your browser don't support canvas.</canvas>
         <div class="results">
             <div class="results__body">
                 <div class="results__body__correct">correct:</div>
@@ -18,9 +26,6 @@
                 <div class="results__body__missed">missed:</div>
                 <div class="results__body__missed-value">0</div>
             </div>
-        <div>
-            <input id="input"></input>
-        </div>
         </div>
     </body>
 </html>

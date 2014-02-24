@@ -1,12 +1,6 @@
 body {
- width: 100%;
- margin: 0;
+  margin: 0;
 }	
-
-.content {
- width: 100%;
- height: 500px;
-}
 
 .results {
  width: 100%;
@@ -31,23 +25,57 @@ body {
  display: inline-block;
 }
 
-.drops {
- width: 1px;
- height: 1px;
- font-size: 26pt;
+.game-over {
+ display: none;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background-color: #FFFFFF;
  font-family: Verdana, monospace;
- color: #333333;
- animation: raining;
- -webkit-animation: raining;
- position: relative;
+ text-align: center;
+ z-index: 20;
+}
+
+.game-over__content {
+ width: 350px;
+ height: 150px;
+ padding-top: 200px;
+ padding-left: 600px;
+ letter-spacing: 2px;
+}
+
+.game-over__content__title {
+ font-size: 26pt;
+}
+
+.game-over__content__result {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ font-size: 28pt;
+ font-weight: 700;
+}
+
+.game-over__content__stat {
+ font-size: 13pt;
+}
+
+a {
+ display: inline-block;
+ padding-top: 10px; 
+ font-size: 14pt;
+ text-decoration: none;
+ color: #27AFB4;
+ cursor: pointer;
 }
 
 @keyframes raining{
  from {transform: translateY(-30px);}
- to {transform: translateY(500px);}
+ to {transform: translateY(490px);}
 }
 
 @-webkit-keyframes raining{
  from {-webkit-transform: translateY(-30px);}
- to {-webkit-transform: translateY(500px);}
+ to {-webkit-transform: translateY(490px);}
 }
